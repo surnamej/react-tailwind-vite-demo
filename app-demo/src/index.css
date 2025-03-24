@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Global Reset: Remove all default margin and padding from root elements */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+/* Optional: Custom variables */
+:root {
+  --font-display: "Satoshi", sans-serif;
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+}
