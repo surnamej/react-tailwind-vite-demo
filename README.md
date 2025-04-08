@@ -5,12 +5,11 @@ This project was set up using **React** with **Vite** and **Tailwind CSS v4** on
 ## Setup Steps
 
 ### 1. Create the React App Using Vite
-
-Open command prompt (or PowerShell) and run:
+I used Vite to quickly create a React project. Open command prompt (or PowerShell) and run:
 
 ```bash
-npm create vite@latest my-app --template react
-cd my-app
+npm create vite@latest app-demo --template react
+cd app-demo
 ```
 ### 2. Install Tailwind CSS and Required Packages
 Install Tailwind CSS along with PostCSS and Autoprefixer as development dependencies:
