@@ -1,21 +1,27 @@
-import React, {useState} from "react";
-import Button from './style_components/Button';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from './counterSlice'; // adjust path if needed
+import Button from '../../style_components/Button';
+import CounterMessage from './CounterMessage';
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <div className="flex flex-col items-center p-4">
       <h1 className="text-2xl font-bold mb-4">Counter: {count}</h1>
+      <CounterMessage />  {/* ✅ New component also using useSelector */}
       <div className="space-x-2">
-        <Button onClick={() => setCount(count - 1)}>Decrement</Button>
-        <Button onClick={() => setCount(count + 1)}>Increment</Button>
+        <Button onClick={() => dispatch(decrement())}>Decrement</Button>
+        <Button onClick={() => dispatch(increment())}>Increment</Button>
       </div>
     </div>
   );
-};
+}
 
 export default Counter;
+
 
 /* 
 -----  Handling State & User Input  -----

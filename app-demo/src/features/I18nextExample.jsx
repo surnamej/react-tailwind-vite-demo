@@ -2,7 +2,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import '../src/ii8n.js'; // Ensure i18next is initialized
+import '../app/ii8n'; // Ensure i18next is initialized
 
 const I18nextExample = () => {
   const { t, i18n } = useTranslation();

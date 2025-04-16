@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import HelloWorld from './HelloWorld';
-import Counter from './Counter';
+import Counter from './counter/Counter';
 import ListForm from './ListForm';
 
 

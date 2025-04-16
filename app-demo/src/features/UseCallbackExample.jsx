@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../src/style_components/Button'; // Assuming you have a Button component
+import Button from '../style_components/Button'; // Assuming you have a Button component
 
 // Child Component
 const Child = React.memo(({ onClick }) => {

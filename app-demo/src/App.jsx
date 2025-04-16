@@ -3,14 +3,14 @@ import React from 'react';
 // import Counter from './Counter';
 // import ListForm from './ListForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import Profile from './Profile';
-import UseEffectExample from './UseEffectExample';
-import UseMemoExample from './UseMemoExample';
-import UseCallbackExample from './UseCallbackExample';
-import FormikForm from './FormikForm';
-import I18nextExample from './I18nextExample';
-import AxiosTest from './axiosInstance';
+import Home from './features/Home';
+import Profile from './features/Profile';
+import UseEffectExample from './features/UseEffectExample';
+import UseMemoExample from './features/UseMemoExample';
+import UseCallbackExample from './features/UseCallbackExample';
+import FormikForm from './features/FormikForm';
+import I18nextExample from './features/I18nextExample';
+import AxiosTest from './features/axiosInstance';
 
 function App() {
   return (

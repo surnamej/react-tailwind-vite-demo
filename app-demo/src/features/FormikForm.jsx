@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
-import Button from '../src/style_components/Button'; // Update your Button component's styling if needed
+import Button from '../style_components/Button'; // Update your Button component's styling if needed
 
 const FormikForm = () => {
   // Initial form values

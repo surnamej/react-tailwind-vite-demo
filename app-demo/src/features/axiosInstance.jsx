@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
-import Button from './style_components/Button';
+import Button from '../style_components/Button';
 import { Link } from "react-router-dom";
 
 // Axios instance setup
