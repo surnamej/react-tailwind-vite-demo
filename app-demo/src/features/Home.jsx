@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import HelloWorld from './HelloWorld';
 import Counter from './counter/Counter';
 import ListForm from './ListForm';
-
+import Greeting from "./Greeting";
+import Message from "./Message";
 
 const Home = () => {
   return (
@@ -13,8 +14,10 @@ const Home = () => {
       <p className="text-lg mb-8">Welcome to Home Page!</p>
       <div>
         <HelloWorld name="Focus Bear" />
+        <Greeting/>
         <Counter />
         <ListForm />
+        <Message />
       </div>
       <div className="space-x-2">
         <Link to="/profile" className="bg-blue-500 text-white px-4 py-2 rounded">
@@ -38,7 +41,9 @@ const Home = () => {
         <Link to="/axios" className="bg-blue-500 text-white px-4 py-2 rounded">
           Go to Axios Example
         </Link>
-
+        <Link to="/buggy" className="bg-blue-500 text-white px-4 py-2 rounded">
+          Go to Buggy Example
+        </Link>
       </div>
     </div>
   );

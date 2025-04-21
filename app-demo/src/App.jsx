@@ -11,6 +11,9 @@ import UseCallbackExample from './features/UseCallbackExample';
 import FormikForm from './features/FormikForm';
 import I18nextExample from './features/I18nextExample';
 import AxiosTest from './features/axiosInstance';
+import Buggy from './features/Buggy';
+import DataFetcher from './components/DataFetcher';
+import Message from './features/Message';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Route path='/formik' element={<FormikForm />} />
         <Route path='/i18next' element={<I18nextExample />} />
         <Route path='/axios' element={<AxiosTest />} />
+        <Route path='/buggy' element={<Buggy />} />
+        <Route path='/fetch' element={<DataFetcher />} />
+        <Route path='/message' element={<Message />} />
       </Routes>
     </Router>
   );
